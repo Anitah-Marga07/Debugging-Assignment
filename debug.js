@@ -3,6 +3,7 @@ function cleanDatabase(recordIds) {
 for (let i = 0; i < recordIds.length; i++) {
 if (recordIds[i] % 2 !== 0) {
 recordIds.splice(i, 1);
+i--; // fix idea
 }
 }
 return recordIds;
